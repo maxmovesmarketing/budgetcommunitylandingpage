@@ -2,9 +2,4 @@
   command = "npm run build"
   publish = "dist"
 
-# Optioneel: verwijder expliciet de Next.js plugin als die per ongeluk actief is
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  # Zet enabled op false zodat hij niet wordt gebruikt
-  [plugins.inputs]
-    enabled = false
+# Verwijder de Next.js plugin volledig voor Vite/React projecten
